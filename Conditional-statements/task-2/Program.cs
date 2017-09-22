@@ -10,6 +10,7 @@ namespace task_2
             Console.OutputEncoding = System.Text.Encoding.UTF8; // paskaa
             // define instructions
             Console.WriteLine("Ohjelma tarkistaa onko syötetty luku parillinen vai pariton");
+            Console.Write("Syötä luku: ");
             bool isNumber;
             string userInput = Console.ReadLine();
             int evaluatedNumber;
