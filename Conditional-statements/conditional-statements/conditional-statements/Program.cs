@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace conditional_statements
+namespace task_1
 {
     class Program
     {
