@@ -7,7 +7,7 @@ namespace task_2
 
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.OutputEncoding = System.Text.Encoding.UTF8; // paskaa
             // define instructions
             Console.WriteLine("Ohjelma tarkistaa onko syötetty luku parillinen vai pariton");
             bool isNumber;
