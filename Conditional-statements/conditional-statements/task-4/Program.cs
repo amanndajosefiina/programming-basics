@@ -7,67 +7,61 @@ namespace task_4
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            // define instructions
+
             Console.WriteLine("Ohjelma asettaa syötetyt numerot suuruusjärjestykseen");
-            bool isNumber;
-            do
+
+            Console.WriteLine("Syötä numero 1:");
+            string numero1 = Console.ReadLine();
+            int numx = int.Parse(numero1);
+
+            Console.WriteLine("Syötä numero 2:");
+            string numero2 = Console.ReadLine();
+            int numy = int.Parse(numero2);
+
+            Console.WriteLine("Syötä numero 3:");
+            string numero3 = Console.ReadLine();
+            int numz = int.Parse(numero3);
+
+            if (numx < numy)
             {
-                Console.Write("Syötä luku: ");
-                // define variables
-                string userInput;
-                userInput = Console.ReadLine();
-
-                int number1;
-
-                Console.Write("Syötä luku: ");
-                // define variables
-                string userInput;
-                userInput = Console.ReadLine();
-
-                int number2;
-
-                Console.Write("Syötä luku: ");
-                // define variables
-                string userInput;
-                userInput = Console.ReadLine();
-
-                int number3;
-
-                isNumber = int.TryParse(userInput, out evaluatedNumber);
-                // program logic
-                if (isNumber == true)
+                if (numy < numz)
                 {
-                    int.TryParse(userInput, out evaluatedNumber);
-
-                    if (evaluatedNumber < 0 && evaluatedNumber % 2 != 0)
+                    if (numx < numz)
                     {
-                        Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen ja pariton");
-                    }
-                    if (evaluatedNumber > 0 && evaluatedNumber % 2 != 0)
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on positiivinen ja pariton");
-                    }
-                    if (evaluatedNumber < 0 && evaluatedNumber % 2 == 0)
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen ja parillinen");
-                    }
-                    if (evaluatedNumber > 0 && evaluatedNumber % 2 == 0)
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on positiivinen ja parillinen");
-                    }
-                    if (evaluatedNumber == 0)
-                    {
-                        Console.WriteLine($"Numero on nolla");
+                        Console.WriteLine($"Järjestys on: {numx}, {numy}, {numz}");
                     }
 
+                    else
+                    {
+                        Console.WriteLine($"Järjestys on: {numz}, {numx}, {numy}");
+                    }
                 }
 
                 else
                 {
-                    Console.WriteLine("Syötit muuta kuin numeroita!");
+                    Console.WriteLine($"Järjestys on: {numx}, {numy}, {numz}");
+                }
+            }
+
+            else
+            {
+                if (numx < numz)
+                {
+                    Console.WriteLine($"Järjestys on: {numy}, {numx}, {numz}");
+                }
+                else
+                {
+                    if (numy < numz)
+                    {
+                        Console.WriteLine($"Järjestys on: {numy}, {numz}, {numx}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Järjestys on: {numz}, {numy}, {numx}");
+                    }
 
                 }
-            } while (isNumber == false);
+            }
             Console.ReadKey();
         }
     }
