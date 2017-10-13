@@ -23,13 +23,13 @@ namespace Vuokaavio_2
                 discounted = true;
             }
 
-            else if (age > 65)
+            else if (age >= 65)
             {
                 discount = 50;
                 discounted = true;
             }
 
-            else if (age > 7 && age < 15)
+            else if (age >= 7 && age <= 15)
             {
                 discount = 50;
                 discounted = true;
@@ -106,8 +106,8 @@ namespace Vuokaavio_2
 
             decimal lopullinenHinta = price - (price * (discount / 100m));
             Console.WriteLine($"Lopullinen hintasi oli: {lopullinenHinta}");
+            Console.WriteLine("Tervetuloa!");
             Console.ReadKey();
-
 
         }
     }

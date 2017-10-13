@@ -13,13 +13,28 @@ namespace tuntitehtävä
             int i = 0;
             int f = 1;
 
-            do
-            {
+            //do
+            //{
+            //    i = i + 1;
+            //    //i++
+            //    f = f * i;
+            //    Console.WriteLine($" {i}! = {f}"); //5! = 120
+            //} while (i < number);
+
+            /*
+                while(i < number)
+                {
                 i = i + 1;
-                //i++
-                f = f * i;
+                   f = f * i;
+                   Console.WriteLine($" {i}! = {f}"); //5! = 120
+                 }
+             */
+
+            for (int j=1; i < number; j++)
+            {
+                f = f * j;
                 Console.WriteLine($" {i}! = {f}"); //5! = 120
-            } while (i < number);
+            }
 
             Console.WriteLine($"Syotit: {number}\n Vastaus: {f}");
             Console.ReadKey();
