@@ -21,6 +21,7 @@ namespace task3_toisto
                         Console.Write($"{rnd.Next(50)} \n");
                 }
             }
+
             Console.ReadKey();
         }
     }
