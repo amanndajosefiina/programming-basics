@@ -29,6 +29,5 @@ namespace funktio_task1
             return printStars;
 
         }
-
     }
 }
