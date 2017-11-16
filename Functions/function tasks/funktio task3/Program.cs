@@ -17,7 +17,6 @@ namespace funktio_task3
         }
 
         static int retNumber(int lower, int upper)
-
         {
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
