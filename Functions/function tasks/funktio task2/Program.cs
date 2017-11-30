@@ -15,7 +15,7 @@ namespace funktio_task2
 
             int low = GetMin(luku1, luku2);
 
-            Console.WriteLine($"Luvuista {luku1} ja {luku2} {low} on pienempi.".);
+            Console.WriteLine($"Luvuista {luku1} ja {luku2} {low} on pienempi.");
 
             Console.ReadKey();
         }
